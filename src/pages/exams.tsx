@@ -55,7 +55,38 @@ export default function ExamsPage() {
         <TitleSection title="Exams" />
         <Section id="exams">
           <Subsection>
-            <SubsectionTitle>Exams and Practice</SubsectionTitle>
+            <SubsectionTitle>Practice (with solutions)</SubsectionTitle>
+
+            <Table>
+              <Thead>
+                <Tr>
+                  <Th textAlign="center">Theory</Th>
+                </Tr>
+              </Thead>
+              <Tbody>
+                <Exam
+                  link="/practice/theory/practice_theory_1.pdf"
+                >
+                  Practice Theory 1
+                </Exam>
+                <Exam
+                  link="/practice/theory/practice_theory_2.pdf"
+                >
+                  Practice Theory 2
+                </Exam>
+                <Exam
+                  link="/practice/theory/practice_theory_3.pdf"
+                >
+                  Practice Theory 3
+                </Exam>
+                <Exam
+                  link="/practice/theory/practice_theory_4.pdf"
+                >
+                  Practice Theory 4
+                </Exam>
+              </Tbody>
+            </Table>
+
             <Table>
               <Thead>
                 <Tr>
@@ -64,28 +95,28 @@ export default function ExamsPage() {
               </Thead>
               <Tbody>
                 <Exam
-                  link="/midterm/practice_midterm.pdf"
-                  solutionsLink="/midterm/practice_midterm_solutions.pdf"
+                  link="/practice/midterm/practice_midterm_1.pdf"
+                  solutionsLink="/practice/midterm/practice_midterm_solutions_1.pdf"
                 >
-                  Practice Midterm
+                  Practice Midterm 1
                 </Exam>
                 <Exam
-                  link="/midterm/midterm.pdf"
-                  solutionsLink="/midterm/midterm_solutions.pdf"
+                  link="/practice/midterm/practice_midterm_2.pdf"
+                  solutionsLink="/practice/midterm/practice_midterm_solutions_2.pdf"
                 >
-                  Spring 2026 Midterm
+                  Practice Midterm 2
                 </Exam>
                 <Exam
-                  link="/final/practice_final.pdf"
-                  solutionsLink="/final/practice_final_solutions.pdf"
+                  link="/practice/final/practice_final_1.pdf"
+                  solutionsLink="/practice/final/practice_final_solutions_1.pdf"
                 >
-                  Practice Final
+                  Practice Final 1
                 </Exam>
                 <Exam
-                  link="/final/final.pdf"
-                  solutionsLink="/final/final_solutions.pdf"
+                  link="/practice/final/practice_final_2.pdf"
+                  solutionsLink="/practice/final/practice_final_solutions_2.pdf"
                 >
-                  Spring 2026 Final
+                  Practice Final 2
                 </Exam>
               </Tbody>
             </Table>

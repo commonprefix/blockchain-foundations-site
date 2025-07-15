@@ -17,7 +17,7 @@ import {
   SubsectionTitle
 } from 'client/components/section';
 import TitleSection from 'client/components/titleSection';
-import { usDate, usTime } from 'common/date';
+import { euDate, euTime } from 'common/date';
 
 type PSETProps = React.PropsWithChildren<{
   softDeadline?: Date;
@@ -56,13 +56,17 @@ function PSET({
       <Td textAlign="center">
         {softDeadline && (
           <Text>
-            {usDate(softDeadline)} ({usTime(softDeadline)})
+            {euDate(softDeadline)} ({euTime(softDeadline)})
           </Text>
         )}
       </Td>
       <Td textAlign="center">
         <Text>
-          TBD
+        {hardDeadline && (
+          <Text>
+            {euDate(hardDeadline)} ({euTime(hardDeadline)})
+          </Text>
+        )}
         </Text>
       </Td>
     </Tr>
@@ -92,81 +96,87 @@ export default function PSETsPage() {
               <Tbody>
 
                 <PSET
-                  hardDeadline={new Date(2023, 0, 19, 13, 30)}
+                  softDeadline={new Date(2026, 1, 18, 14, 0)}
+                  hardDeadline={new Date(2026, 1, 20, 14, 0)}
                   link="/psets/pset1.pdf"
-                  solutionLink="#"
+                  solutionLink=""
                 >
                   Problem Set 1
                 </PSET>
 
                 <PSET
-                  hardDeadline={new Date(2023, 0, 26, 13, 15)}
+                  softDeadline={new Date(2026, 1, 25, 14, 0)}
+                  hardDeadline={new Date(2026, 1, 27, 14, 0)}
                   link="/psets/pset2.pdf"
-                  solutionLink="#"
+                  solutionLink=""
                 >
                   Problem Set 2
                 </PSET>
 
                 <PSET
-                  hardDeadline={new Date(2023, 1, 2, 13, 15)}
+                  softDeadline={new Date(2026, 2, 4, 14, 0)}
+                  hardDeadline={new Date(2026, 2, 6, 14, 0)}
                   link="/psets/pset3.pdf"
-                  solutionLink="#"
+                  solutionLink=""
                 >
                   Problem Set 3
                 </PSET>
 
                 <PSET
-                  hardDeadline={new Date(2023, 1, 6, 13, 15)}
-                  link="/psets/theory_exercise_1.pdf"
-                  solutionLink="/psets/theory_exercise_1_solutions.pdf"
+                  hardDeadline={new Date(2026, 2, 13, 14, 0)}
+                  link=""
+                  solutionLink=""
                 >
                   Theory Exercise 1
                 </PSET>
 
                 <PSET
-                  hardDeadline={new Date(2023, 1, 13, 13, 15)}
-                  link="/psets/theory_exercise_2.pdf"
-                  solutionLink="/psets/theory_exercise_2_solutions.pdf"
+                  hardDeadline={new Date(2026, 2, 20, 14, 0)}
+                  link=""
+                  solutionLink=""
                 >
                   Theory Exercise 2
                 </PSET>
 
                 <PSET
-                  hardDeadline={new Date(2023, 1, 23, 13, 15)}
+                  softDeadline={new Date(2026, 2, 25, 14, 0)}
+                  hardDeadline={new Date(2026, 2, 27, 14, 0)}
                   link="/psets/pset4.pdf"
-                  solutionLink="#"
+                  solutionLink=""
                 >
                   Problem Set 4
                 </PSET>
 
                 <PSET
-                  hardDeadline={new Date(2023, 2, 2, 13, 15)}
+                  softDeadline={new Date(2026, 3, 1, 14, 0)}
+                  hardDeadline={new Date(2026, 3, 3, 14, 0)}
                   link="/psets/pset5.pdf"
-                  solutionLink="#"
+                  solutionLink=""
                 >
                   Problem Set 5
                 </PSET>
 
                 <PSET
-                  hardDeadline={new Date(2023, 2, 13, 13, 15)}
+                  softDeadline={new Date(2026, 3, 22, 14, 0)}
+                  hardDeadline={new Date(2026, 3, 29, 14, 0)}
                   link="/psets/pset6.pdf"
-                  solutionLink="#"
+                  solutionLink=""
                 >
                   Problem Set 6
                 </PSET>
 
                 <PSET
-                  hardDeadline={new Date(2023, 2, 16, 13, 15)}
-                  link="/psets/theory_exercise_3.pdf"
-                  solutionLink="/psets/theory_exercise_3_solutions.pdf"
+                  hardDeadline={new Date(2026, 4, 1, 14, 0)}
+                  link=""
+                  solutionLink=""
                 >
                   Theory Exercise 3
                 </PSET>
 
                 <PSET
-                  hardDeadline={new Date(2023, 2, 20, 13, 15)}
-                  link="/psets/theory_exercise_4.pdf"
-                  solutionLink="/psets/theory_exercise_4_solutions.pdf"
+                  hardDeadline={new Date(2026, 5, 19, 14, 0)}
+                  link=""
+                  solutionLink=""
                 >
                   Theory Exercise 4
                 </PSET>
