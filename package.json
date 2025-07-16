@@ -62,5 +62,8 @@
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "prettier": "^2.7.1",
     "typescript": "4.7.4"
+  },
+  "resolutions": {
+    "@types/react": "18.0.14"
   }
 }

@@ -14,8 +14,8 @@ import fs from 'fs';
 import { GetStaticProps } from 'next';
 import dynamic from 'next/dynamic';
 import ReactMarkdown, { Components } from 'react-markdown';
-const SyntaxHighlighter = dynamic(
-  () => import('react-syntax-highlighter/dist/esm/prism'),
+const SyntaxHighlighter = dynamic<any>(
+  () => import('react-syntax-highlighter/dist/esm/prism').then(mod => mod.default),
   { ssr: false }
 );
 
