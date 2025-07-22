@@ -24,7 +24,6 @@ import {
   SubsectionTitle,
   SubsectionTitleDate,
   SubsubsectionTitle,
-  SyllabusLink,
   TeachingTeamMember
 } from 'client/components/section';
 import TitleSection from 'client/components/titleSection';
@@ -458,12 +457,6 @@ const syllabus: SyllabusWeek[] = [
           'Proof of Work vs Proof of Stake',
           'Dangers of Proof of Stake',
           'The Proof of Stake equation',
-          <SyllabusLink
-            key="lecturenotes"
-            href="/lecturenotes/EE374_Lecture_15_notes.pdf"
-          >
-            Lecture notes
-          </SyllabusLink>
         ]
       },
       {
@@ -480,12 +473,6 @@ const syllabus: SyllabusWeek[] = [
           'Proof of Work vs Proof of Stake',
           'Dangers of Proof of Stake',
           'The Proof of Stake equation',
-          <SyllabusLink
-            key="lecturenotes"
-            href="/lecturenotes/EE374_Lecture_16_notes.pdf"
-          >
-            Lecture notes
-          </SyllabusLink>
         ]
       }
     ]
@@ -502,12 +489,6 @@ const syllabus: SyllabusWeek[] = [
           'VRF correctness',
           'The unpredictability game',
           'Towards instant finality',
-          <SyllabusLink
-            key="lecturenotes"
-            href="/lecturenotes/EE374_Lecture_17_notes.pdf"
-          >
-            Lecture notes
-          </SyllabusLink>
         ]
       },
       {
@@ -531,12 +512,6 @@ const syllabus: SyllabusWeek[] = [
         content: [
           'The Streamlet protocol and its proof of safety',
           'Accountability and slashing',
-          <SyllabusLink
-            key="lecturenotes"
-            href="/lecturenotes/EE374_Lecture_18_notes.pdf"
-          >
-            Lecture notes
-          </SyllabusLink>
         ]
       },
       {
@@ -558,12 +533,14 @@ const syllabus: SyllabusWeek[] = [
           'Permissioned vs Proof of Stake: static vs dynamic stake',
           'Stake grinding attacks and their mitigations',
           'Stake unbonding and long range attacks and their mitigations',
-          <SyllabusLink
-            key="lecturenotes"
-            href="/lecturenotes/EE374_Lecture_19_notes.pdf"
-          >
-            Lecture notes
-          </SyllabusLink>
+        ]
+      },
+      {
+        title:
+          'Lecture 20: Leonardos\' Lecture',
+        date: new Date(2026, 4, 6, 13, 0),
+        content: [
+          'TBD'
         ]
       }
     ]
@@ -811,23 +788,36 @@ export default function HomePage() {
           spacing={{ sm: 8, md: 10 }}
         >
 
-          <Box gridColumn="1 / span 2" display="flex" justifyContent="center">
-            <TeachingTeamMember
-              name="Dr. Dionysis Zindros"
-              workRole="Instructor"
-              email="dionyziz@commonprefix.com"
-              officeHoursDate={
-                <>
-                  Tue 15:00-16:00,
-                  Wed 11:00-12:00
-                  <br />
-                </>
-              }
-              officeHoursLocation="TBD"
-              src="/images/dionysis.png"
-              alt="Dionysis Zindros"
-            />
-          </Box>
+          <TeachingTeamMember
+            name="Dr. Dionysis Zindros"
+            workRole="Instructor"
+            email="dionyziz@commonprefix.com"
+            officeHoursDate={
+              <>
+                Tue 15:00-16:00,
+                Wed 11:00-12:00
+                <br />
+              </>
+            }
+            officeHoursLocation="TBD"
+            src="/images/dionysis.png"
+            alt="Dionysis Zindros"
+          />
+
+          <TeachingTeamMember
+            name="Prof. Nikos Leonardos"
+            workRole="Instructor"
+            email="nleon@di.uoa.gr"
+            officeHoursDate={
+              <>
+                Upon request
+                <br />
+              </>
+            }
+            officeHoursLocation="CoReLab"
+            src="/images/nikos.png"
+            alt="Nikos Leonardos"
+          />
 
           <TeachingTeamMember
             name="Nikolas Kamarinakis"
@@ -839,7 +829,7 @@ export default function HomePage() {
                 <br />
               </>
             }
-            officeHoursLocation="1.1.29, old ECE building"
+            officeHoursLocation="CoReLab"
             src="/images/nikolas.jpg"
             alt="Nikolas Kamarinakis"
           />
@@ -854,7 +844,7 @@ export default function HomePage() {
                 <br />
               </>
             }
-            officeHoursLocation="1.1.29, old ECE building"
+            officeHoursLocation="CoReLab"
             src="/images/odysseas.jpg"
             alt="Odysseas Sofikitis"
           />
