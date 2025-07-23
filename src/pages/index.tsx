@@ -619,7 +619,9 @@ export default function HomePage() {
               Meeting Times
             </SubsectionTitle>
             <SubectionText>
-              Add lecture times
+              Monday, Thursday 13:00-15:00
+              <br />
+              old ECE building, room 1.1.29
             </SubectionText>
           </Subsection>
 
@@ -695,7 +697,15 @@ export default function HomePage() {
               Questions or Concerns?
             </SubsectionTitle>
             <SubectionText>
-              TBD
+            This term we will be using Piazza for class discussion. Rather than
+            emailing questions to the teaching staff, we encourage you to post
+            your questions on Piazza.
+            <br/>
+            Find our class signup link at:
+            <br/>
+            <Link color={primaryColor} href="https://piazza.com/national_technical_university_of_athens/spring2026/almaadvancedtopicsincryptography" target="_blank">
+              https://piazza.com/national_technical_university_of_athens/spring2026/almaadvancedtopicsincryptography
+            </Link>
             </SubectionText>
             <SubectionText>
               Otherwise, please reach out to{' '}

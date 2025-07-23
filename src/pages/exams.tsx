@@ -65,22 +65,22 @@ export default function ExamsPage() {
               </Thead>
               <Tbody>
                 <Exam
-                  link="/practice/theory/practice_theory_1.pdf"
+                  link="/practice/theory/practice_theory_exercise_1.pdf"
                 >
                   Practice Theory 1
                 </Exam>
                 <Exam
-                  link="/practice/theory/practice_theory_2.pdf"
+                  link="/practice/theory/practice_theory_exercise_2.pdf"
                 >
                   Practice Theory 2
                 </Exam>
                 <Exam
-                  link="/practice/theory/practice_theory_3.pdf"
+                  link="/practice/theory/practice_theory_exercise_3.pdf"
                 >
                   Practice Theory 3
                 </Exam>
                 <Exam
-                  link="/practice/theory/practice_theory_4.pdf"
+                  link="/practice/theory/practice_theory_exercise_4.pdf"
                 >
                   Practice Theory 4
                 </Exam>
