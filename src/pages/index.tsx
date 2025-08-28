@@ -637,6 +637,7 @@ const syllabus: SyllabusWeek[] = [
 export default function HomePage() {
   const section1SubsectionTitleColor = 'gray.400';
   const primaryColor = 'blue.400';
+  const dividerColor = useColorModeValue('gray.600', 'gray.100');
 
   const colors = {
     psetSoft: 'orange.400',
@@ -793,11 +794,12 @@ export default function HomePage() {
                 {items.length > 0 ? items.map(
                   ({ title, date, location, content, type }, index) => {
                     const color = type ? colors[type] : primaryColor;
+
                     return (
                       <Box key={index}>
                         {index > 0 && (
                           <Divider
-                            borderColor={useColorModeValue('gray.600', 'gray.100')}
+                            borderColor={dividerColor}
                             opacity={0.25}
                             my={2}
                           />
