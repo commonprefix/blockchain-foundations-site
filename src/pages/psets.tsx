@@ -54,19 +54,11 @@ function PSET({
         </Stack>
       </Td>
       <Td textAlign="center">
-        {softDeadline && (
-          <Text>
-            {euDate(softDeadline)} ({euTime(softDeadline)})
-          </Text>
-        )}
+        {softDeadline && `${euDate(softDeadline)} (${euTime(softDeadline)})`}
       </Td>
       <Td textAlign="center">
         <Text>
-        {hardDeadline && (
-          <Text>
-            {euDate(hardDeadline)} ({euTime(hardDeadline)})
-          </Text>
-        )}
+        {hardDeadline && `${euDate(hardDeadline)} (${euTime(hardDeadline)})`}
         </Text>
       </Td>
     </Tr>
@@ -96,8 +88,8 @@ export default function PSETsPage() {
               <Tbody>
 
                 <PSET
-                  softDeadline={new Date(2026, 1, 18, 14, 0)}
-                  hardDeadline={new Date(2026, 1, 20, 14, 0)}
+                  softDeadline={new Date(2026, 1, 25, 14, 0)}
+                  hardDeadline={new Date(2026, 1, 27, 14, 0)}
                   link="/psets/pset1.pdf"
                   solutionLink=""
                 >
@@ -105,8 +97,8 @@ export default function PSETsPage() {
                 </PSET>
 
                 <PSET
-                  softDeadline={new Date(2026, 1, 25, 14, 0)}
-                  hardDeadline={new Date(2026, 1, 27, 14, 0)}
+                  softDeadline={new Date(2026, 2, 18, 14, 0)}
+                  hardDeadline={new Date(2026, 2, 20, 14, 0)}
                   link="/psets/pset2.pdf"
                   solutionLink=""
                 >
@@ -114,8 +106,8 @@ export default function PSETsPage() {
                 </PSET>
 
                 <PSET
-                  softDeadline={new Date(2026, 2, 4, 14, 0)}
-                  hardDeadline={new Date(2026, 2, 6, 14, 0)}
+                  softDeadline={new Date(2026, 2, 25, 14, 0)}
+                  hardDeadline={new Date(2026, 2, 27, 14, 0)}
                   link="/psets/pset3.pdf"
                   solutionLink=""
                 >
@@ -123,7 +115,7 @@ export default function PSETsPage() {
                 </PSET>
 
                 <PSET
-                  hardDeadline={new Date(2026, 2, 13, 14, 0)}
+                  hardDeadline={new Date(2026, 3, 3, 14, 0)}
                   link=""
                   solutionLink=""
                 >
@@ -131,7 +123,7 @@ export default function PSETsPage() {
                 </PSET>
 
                 <PSET
-                  hardDeadline={new Date(2026, 2, 20, 14, 0)}
+                  hardDeadline={new Date(2026, 3, 10, 14, 0)}
                   link=""
                   solutionLink=""
                 >
@@ -139,8 +131,8 @@ export default function PSETsPage() {
                 </PSET>
 
                 <PSET
-                  softDeadline={new Date(2026, 2, 25, 14, 0)}
-                  hardDeadline={new Date(2026, 2, 27, 14, 0)}
+                  softDeadline={new Date(2026, 3, 29, 14, 0)}
+                  hardDeadline={new Date(2026, 4, 1, 14, 0)}
                   link="/psets/pset4.pdf"
                   solutionLink=""
                 >
@@ -148,8 +140,8 @@ export default function PSETsPage() {
                 </PSET>
 
                 <PSET
-                  softDeadline={new Date(2026, 3, 1, 14, 0)}
-                  hardDeadline={new Date(2026, 3, 3, 14, 0)}
+                  softDeadline={new Date(2026, 4, 6, 14, 0)}
+                  hardDeadline={new Date(2026, 4, 8, 14, 0)}
                   link="/psets/pset5.pdf"
                   solutionLink=""
                 >
@@ -157,8 +149,8 @@ export default function PSETsPage() {
                 </PSET>
 
                 <PSET
-                  softDeadline={new Date(2026, 3, 22, 14, 0)}
-                  hardDeadline={new Date(2026, 3, 29, 14, 0)}
+                  softDeadline={new Date(2026, 4, 13, 14, 0)}
+                  hardDeadline={new Date(2026, 4, 20, 14, 0)}
                   link="/psets/pset6.pdf"
                   solutionLink=""
                 >
@@ -166,7 +158,7 @@ export default function PSETsPage() {
                 </PSET>
 
                 <PSET
-                  hardDeadline={new Date(2026, 4, 1, 14, 0)}
+                  hardDeadline={new Date(2026, 4, 22, 14, 0)}
                   link=""
                   solutionLink=""
                 >

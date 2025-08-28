@@ -5,7 +5,7 @@ import {
   AccordionItem,
   AccordionPanel,
   Box,
-  HStack,
+  Divider,
   Link,
   ListItem,
   SimpleGrid,
@@ -55,7 +55,7 @@ const syllabus: SyllabusWeek[] = [
     items: [
       {
         title: 'Lecture 1: Money',
-        date: new Date(2026, 1, 9, 13, 0),
+        date: new Date(2026, 1, 16, 13, 0),
         content: [
           'Administrivia',
           'Money as a social construct',
@@ -64,9 +64,10 @@ const syllabus: SyllabusWeek[] = [
           'The gossip protocol'
         ]
       },
+
       {
         title: 'Workshop 1: TypeScript',
-        date: new Date(2026, 1, 11, 18, 0),
+        date: new Date(2026, 1, 18, 18, 0),
         location: '1.1.29, old ECE building',
         content: [
           'Setting up a TypeScript project',
@@ -75,9 +76,10 @@ const syllabus: SyllabusWeek[] = [
         ],
         type: 'workshop'
       },
+
       {
         title: 'Lecture 2: The Adversary',
-        date: new Date(2026, 1, 12, 13, 0),
+        date: new Date(2026, 1, 19, 13, 0),
         content: [
           'The adversary A',
           'The security parameter κ',
@@ -90,9 +92,10 @@ const syllabus: SyllabusWeek[] = [
           'Proofs by contradiction and forward proofs'
         ]
       },
+
       {
         title: 'Workshop 2: Networking',
-        date: new Date(2026, 1, 13, 18, 0),
+        date: new Date(2026, 1, 20, 18, 0),
         location: '1.1.29, old ECE building',
         content: [
           'TCP/IP socket connections',
@@ -103,12 +106,20 @@ const syllabus: SyllabusWeek[] = [
       }
     ]
   },
+
   {
     title: 'Week 2',
     items: [
       {
+        title: 'Problem Set 1 Soft Deadline',
+        date: new Date(2026, 1, 25, 14, 0),
+        content: [softGradingDeadlineMessage],
+        type: 'psetSoft'
+      },
+
+      {
         title: 'Lecture 3: Primitives',
-        date: new Date(2026, 1, 16, 13, 0),
+        date: new Date(2026, 1, 26, 13, 0),
         content: [
           'The hash function: H',
           'Preimage resistance, second preimage resistance, collision resistance',
@@ -121,15 +132,36 @@ const syllabus: SyllabusWeek[] = [
           'Ledgers'
         ]
       },
+
       {
-        title: 'Problem Set 1 Soft Deadline',
-        date: new Date(2026, 1, 18, 14, 0),
-        content: [softGradingDeadlineMessage],
-        type: 'psetSoft'
+        title: 'Problem Set 1 Hard Deadline',
+        date: new Date(2026, 1, 27, 14, 0),
+        content: [hardGradingDeadlineMessage],
+        type: 'psetHard'
       },
+
+      {
+        title: 'Workshop 3: Promises and Events',
+        date: new Date(2026, 1, 27, 18, 0),
+        location: '1.1.29, old ECE building',
+        content: ['JavaScript promises', 'Async/await', 'Event emitters'],
+        type: 'workshop'
+      }
+    ]
+  },
+
+  {
+    title: 'Week 3',
+    items: [
+    ]
+  },
+
+  {
+    title: 'Week 4',
+    items: [
       {
         title: 'Lecture 4: Transactions',
-        date: new Date(2023, 0, 19, 13, 30),
+        date: new Date(2026, 2, 9, 13, 0),
         content: [
           'Transactions',
           'Inputs and outputs',
@@ -142,27 +174,10 @@ const syllabus: SyllabusWeek[] = [
           'Verifying a transaction'
         ]
       },
-      {
-        title: 'Problem Set 1 Hard Deadline',
-        date: new Date(2026, 1, 20, 14, 0),
-        content: [hardGradingDeadlineMessage],
-        type: 'psetHard'
-      },
-      {
-        title: 'Workshop 3: Promises and Events',
-        date: new Date(2026, 1, 20, 18, 0),
-        location: '1.1.29, old ECE building',
-        content: ['JavaScript promises', 'Async/await', 'Event emitters'],
-        type: 'workshop'
-      }
-    ]
-  },
-  {
-    title: 'Week 3',
-    items: [
+
       {
         title: 'Lecture 5: Blocks',
-        date: new Date(2026, 1, 23, 13, 0),
+        date: new Date(2026, 2, 12, 13, 0),
         content: [
           'Views in disagreement',
           'Double spending',
@@ -179,15 +194,15 @@ const syllabus: SyllabusWeek[] = [
           'Chains'
         ]
       },
-      {
-        title: 'Problem Set 2 Soft Deadline',
-        date: new Date(2026, 1, 25, 14, 0),
-        content: [softGradingDeadlineMessage],
-        type: 'psetSoft'
-      },
+    ]
+  },
+
+  {
+    title: 'Week 5',
+    items: [
       {
         title: 'Lecture 6: Chains',
-        date: new Date(2026, 1, 26, 13, 0),
+        date: new Date(2026, 2, 16, 13, 0),
         content: [
           'Hash chains',
           'The number n of parties',
@@ -202,20 +217,17 @@ const syllabus: SyllabusWeek[] = [
           'Mempools'
         ]
       },
+
       {
-        title: 'Problem Set 2 Hard Deadline',
-        date: new Date(2026, 1, 27, 14, 0),
-        content: [hardGradingDeadlineMessage],
-        type: 'psetHard'
-      }
-    ]
-  },
-  {
-    title: 'Week 4',
-    items: [
+        title: 'Problem Set 2 Soft Deadline',
+        date: new Date(2026, 2, 18, 14, 0),
+        content: [softGradingDeadlineMessage],
+        type: 'psetSoft'
+      },
+
       {
         title: 'Lecture 7: Chain Virtues',
-        date: new Date(2026, 2, 2, 13, 0),
+        date: new Date(2026, 2, 19, 13, 0),
         content: [
           'Temporary forks',
           'Convergence',
@@ -225,15 +237,22 @@ const syllabus: SyllabusWeek[] = [
           'Majority attacks'
         ]
       },
+
       {
-        title: 'Problem Set 3 Soft Deadline',
-        date: new Date(2026, 2, 4, 14, 0),
-        content: [softGradingDeadlineMessage],
-        type: 'psetSoft'
-      },
+        title: 'Problem Set 2 Hard Deadline',
+        date: new Date(2026, 2, 20, 14, 0),
+        content: [hardGradingDeadlineMessage],
+        type: 'psetHard'
+      }
+    ]
+  },
+
+  {
+    title: 'Week 6',
+    items: [
       {
         title: 'Lecture 8: Attacks',
-        date: new Date(2026, 2, 5, 13, 0),
+        date: new Date(2026, 2, 23, 13, 0),
         content: [
           'Healing',
           'Macroeconomic supply',
@@ -241,20 +260,17 @@ const syllabus: SyllabusWeek[] = [
           'Mining pools'
         ]
       },
+
       {
-        title: 'Problem Set 3 Hard Deadline',
-        date: new Date(2026, 2, 6, 14, 0),
-        content: [hardGradingDeadlineMessage],
-        type: 'psetHard'
-      }
-    ]
-  },
-  {
-    title: 'Week 5',
-    items: [
+        title: 'Problem Set 3 Soft Deadline',
+        date: new Date(2026, 2, 25, 14, 0),
+        content: [softGradingDeadlineMessage],
+        type: 'psetSoft'
+      },
+
       {
         title: 'Lecture 9: Variable Difficulty, Pools, Wallets',
-        date: new Date(2026, 2, 9, 13, 0),
+        date: new Date(2026, 2, 26, 13, 0),
         content: [
           'CPU, GPU, ASIC mining',
           'Incentive compatibility',
@@ -268,18 +284,32 @@ const syllabus: SyllabusWeek[] = [
           'Wallet seeds, deterministic wallets'
         ]
       },
+
+      {
+        title: 'Problem Set 3 Hard Deadline',
+        date: new Date(2026, 2, 27, 14, 0),
+        content: [hardGradingDeadlineMessage],
+        type: 'psetHard'
+      },
+
       {
         title: 'Theoretic Workshop 1',
-        date: new Date(2026, 2, 11, 18, 0),
+        date: new Date(2026, 2, 27, 18, 0),
         location: '1.1.29, old ECE building',
         content: [
           'TBD'
         ],
         type: 'workshop'
-      },
+      }
+    ]
+  },
+
+  {
+    title: 'Week 7',
+    items: [
       {
         title: 'Lecture 10: Accounts and Balances, Merkle Trees',
-        date: new Date(2026, 2, 12, 13, 0),
+        date: new Date(2026, 2, 30, 13, 0),
         content: [
           'The account model',
           'Transactions in the account model',
@@ -294,35 +324,20 @@ const syllabus: SyllabusWeek[] = [
           'Merkle Tree security proof by reduction from collision-resistant hashes'
         ]
       },
-      {
-        title: 'Theory Exercise 1 Deadline',
-        date: new Date(2026, 2, 13, 14, 0),
-        content: [theoryExerciseDeadlineMessage],
-        type: 'theoryExercise'
-      }
-    ]
-  },
-  {
-    title: 'Week 6',
-    items: [
-      {
-        title: 'Midterm Exam',
-        date: new Date(2026, 2, 16, 13, 0),
-        content: ['More information available on Ed'],
-        type: 'exam'
-      },
+
       {
         title: 'Theoretic Workshop 2',
-        date: new Date(2026, 2, 18, 18, 0),
+        date: new Date(2026, 3, 1, 18, 0),
         location: '1.1.29, old ECE building',
         content: [
           'TBD'
         ],
         type: 'workshop'
       },
+
       {
         title: 'Lecture 11: Light Clients, Backbone Warmup',
-        date: new Date(2026, 2, 19, 13, 0),
+        date: new Date(2026, 3, 2, 13, 0),
         content: [
           'The problem of scalability in blockchains: Scaling computation, communication, and storage',
           'From x-bar to x using Merkle Trees',
@@ -335,20 +350,47 @@ const syllabus: SyllabusWeek[] = [
           'The synchrony assumption Δ = 1'
         ]
       },
+
       {
-        title: 'Theory Exercise 2 Deadline',
-        date: new Date(2026, 2, 20, 14, 0),
+        title: 'Theory Exercise 1 Deadline',
+        date: new Date(2026, 3, 3, 14, 0),
         content: [theoryExerciseDeadlineMessage],
         type: 'theoryExercise'
       }
     ]
   },
+
   {
-    title: 'Week 7',
+    title: 'Week 8 (Easter Break)',
     items: [
       {
+        title: 'Theory Exercise 2 Deadline',
+        date: new Date(2026, 3, 10, 14, 0),
+        content: [theoryExerciseDeadlineMessage],
+        type: 'theoryExercise'
+      }
+    ]
+  },
+
+  {
+    title: 'Week 9 (Easter Break)',
+    items: [
+    ]
+  },
+
+  {
+    title: 'Week 10',
+    items: [
+      {
+        title: 'Midterm Exam',
+        date: new Date(2026, 3, 20, 13, 0),
+        content: ['More information available on piazza'],
+        type: 'exam'
+      },
+
+      {
         title: 'Lecture 12: Security in Earnest (I)',
-        date: new Date(2026, 2, 23, 13, 0),
+        date: new Date(2026, 3, 22, 13, 0),
         content: [
           'The Environment and the Execution',
           'The Rushing Adversary',
@@ -372,15 +414,15 @@ const syllabus: SyllabusWeek[] = [
           'Convergence Opportunities are useful: The Pairing Lemma and its proof'
         ]
       },
-      {
-        title: 'Problem Set 4 Soft Deadline',
-        date: new Date(2026, 2, 25, 14, 0),
-        content: [softGradingDeadlineMessage],
-        type: 'psetSoft'
-      },
+    ]
+  },
+
+  {
+    title: 'Week 11',
+    items: [
       {
         title: 'Lecture 13: Security in Earnest (II)',
-        date: new Date(2026, 2, 26, 13, 0),
+        date: new Date(2026, 3, 27, 13, 0),
         content: [
           'Ledger Safety and Liveness, formally. The liveness parameter u.',
           'Proof of Safety from Common Prefix',
@@ -402,20 +444,18 @@ const syllabus: SyllabusWeek[] = [
           'A plot of X, Y, and Z with 3f, 3ε and δ'
         ]
       },
+
+
       {
-        title: 'Problem Set 4 Hard Deadline',
-        date: new Date(2026, 2, 27, 14, 0),
-        content: [hardGradingDeadlineMessage],
-        type: 'psetHard'
-      }
-    ]
-  },
-  {
-    title: 'Week 8',
-    items: [
+        title: 'Problem Set 4 Soft Deadline',
+        date: new Date(2026, 3, 29, 14, 0),
+        content: [softGradingDeadlineMessage],
+        type: 'psetSoft'
+      },
+
       {
         title: 'Lecture 14: Security in Earnest (III)',
-        date: new Date(2026, 2, 30, 13, 0),
+        date: new Date(2026, 3, 30, 13, 0),
         content: [
           'Reminder of bounds on the expectations of X and Y',
           'Upper bound on the expectation of Z',
@@ -427,62 +467,82 @@ const syllabus: SyllabusWeek[] = [
           "You can't have it all: Discussion on the parametrization options for ε, f, δ"
         ]
       },
+
       {
-        title: 'Problem Set 5 Soft Deadline',
-        date: new Date(2026, 3, 1, 14, 0),
-        content: [softGradingDeadlineMessage],
-        type: 'psetSoft'
-      },
-      {
-        title: 'No Lecture!',
-        date: new Date(2026, 3, 2),
-        content: []
-      },
-      {
-        title: 'Problem Set 5 Hard Deadline',
-        date: new Date(2026, 3, 3, 14, 0),
+        title: 'Problem Set 4 Hard Deadline',
+        date: new Date(2026, 4, 1, 14, 0),
         content: [hardGradingDeadlineMessage],
         type: 'psetHard'
       }
     ]
   },
+
   {
-    title: 'Week 9',
+    title: 'Week 12',
     items: [
       {
-        title: 'Lecture 15: Longest Chain Proof of Stake (I)',
-        date: new Date(2026, 3, 20, 13, 0),
+        title:
+          'Lecture 15: Byzantine Agreement',
+        date: new Date(2026, 4, 4, 13, 0),
         content: [
-          "Proof of Work's perils and environmental impact",
-          'Proof of Work vs Proof of Stake',
-          'Dangers of Proof of Stake',
-          'The Proof of Stake equation',
+          'Byzantine Agreement: Consensus and Agreement',
+          'Lower bound of t < n / 3',
+          'EIG and Dolev-Strong Protocols',
+          'Solving Consensus with Bitcoin'
         ]
       },
+
       {
-        title: 'Problem Set 6 Soft Deadline',
-        date: new Date(2026, 3, 22, 14, 0),
+        title: 'Problem Set 5 Soft Deadline',
+        date: new Date(2026, 4, 6, 14, 0),
         content: [softGradingDeadlineMessage],
         type: 'psetSoft'
       },
+
       {
-        title: 'Lecture 16: Longest Chain Proof of Stake (II)',
-        date: new Date(2026, 3, 23, 13, 0),
+        title: 'Lecture 16: Longest Chain Proof of Stake (I)',
+        date: new Date(2026, 4, 7, 13, 0),
         content: [
           "Proof of Work's perils and environmental impact",
           'Proof of Work vs Proof of Stake',
           'Dangers of Proof of Stake',
           'The Proof of Stake equation',
         ]
-      }
+      },
+
+      {
+        title: 'Problem Set 5 Hard Deadline',
+        date: new Date(2026, 4, 8, 14, 0),
+        content: [hardGradingDeadlineMessage],
+        type: 'psetHard'
+      },
     ]
   },
+
   {
-    title: 'Week 10',
+    title: 'Week 13',
     items: [
       {
-        title: 'Lecture 17: BFT Proof of Stake (I)',
-        date: new Date(2026, 3, 27, 13, 0),
+        title: 'Lecture 17: Longest Chain Proof of Stake (II)',
+        date: new Date(2026, 4, 11, 13, 0),
+        content: [
+          "Proof of Work's perils and environmental impact",
+          'Proof of Work vs Proof of Stake',
+          'Dangers of Proof of Stake',
+          'The Proof of Stake equation',
+        ]
+      },
+
+      {
+        title: 'Problem Set 6 Soft Deadline',
+        date: new Date(2026, 4, 13, 14, 0),
+        content: [softGradingDeadlineMessage],
+        type: 'psetSoft'
+      },
+
+      {
+        title: 'Lecture 18: BFT Proof of Stake (I)',
+        date: new Date(2026, 4, 14, 13, 0),
         content: [
           'Everything is a Race and Nakamoto Always Wins',
           'Verifiable Random Functions',
@@ -491,60 +551,58 @@ const syllabus: SyllabusWeek[] = [
           'Towards instant finality',
         ]
       },
-      {
-        title: 'Problem Set 6 Hard Deadline',
-        date: new Date(2026, 3, 29, 14, 0),
-        content: [hardGradingDeadlineMessage],
-        type: 'psetHard'
-      },
+
       {
         title: 'Theoretic Workshop 3',
-        date: new Date(2026, 3, 29, 18, 0),
+        date: new Date(2026, 4, 15, 18, 0),
         location: '1.1.29, old ECE building',
         content: [
           'TBD'
         ],
         type: 'workshop'
-      },
+      }
+    ]
+  },
+
+  {
+    title: 'Week 14',
+    items: [
       {
-        title: 'Lecture 18: BFT Proof of Stake (II)',
-        date: new Date(2026, 3, 30, 13, 0),
+        title: 'Lecture 19: BFT Proof of Stake (II)',
+        date: new Date(2026, 4, 18, 13, 0),
         content: [
           'The Streamlet protocol and its proof of safety',
           'Accountability and slashing',
         ]
       },
+
       {
-        title: 'Theory Exercise 3 Deadline',
-        date: new Date(2026, 4, 1, 14, 0),
-        content: [theoryExerciseDeadlineMessage],
-        type: 'theoryExercise'
-      }
-    ]
-  },
-  {
-    title: 'Week 11',
-    items: [
+        title: 'Problem Set 6 Hard Deadline',
+        date: new Date(2026, 4, 20, 14, 0),
+        content: [hardGradingDeadlineMessage],
+        type: 'psetHard'
+      },
+
       {
         title:
           'Lecture 19: Proof of Stake Conclusion',
-        date: new Date(2026, 4, 4, 13, 0),
+        date: new Date(2026, 4, 21, 13, 0),
         content: [
           'Permissioned vs Proof of Stake: static vs dynamic stake',
           'Stake grinding attacks and their mitigations',
           'Stake unbonding and long range attacks and their mitigations',
         ]
       },
+
       {
-        title:
-          'Lecture 20: Leonardos\' Lecture',
-        date: new Date(2026, 4, 6, 13, 0),
-        content: [
-          'TBD'
-        ]
+        title: 'Theory Exercise 3 Deadline',
+        date: new Date(2026, 4, 22, 14, 0),
+        content: [theoryExerciseDeadlineMessage],
+        type: 'theoryExercise'
       }
     ]
   },
+
   {
     title: 'Finals Week',
     items: [
@@ -557,12 +615,15 @@ const syllabus: SyllabusWeek[] = [
         ],
         type: 'workshop'
       },
+
       {
         title: 'Theory Exercise 4 Deadline',
         date: new Date(2026, 5, 19, 14, 0),
         content: [theoryExerciseDeadlineMessage],
         type: 'theoryExercise'
       },
+
+
       {
         title: 'Take-Home Final Exam',
         date: new Date(2026, 5, 22),
@@ -729,12 +790,20 @@ export default function HomePage() {
               <SubsectionTitle>{title}</SubsectionTitle>
 
               <Stack key={index} width="full" spacing={0}>
-                {items.map(
+                {items.length > 0 ? items.map(
                   ({ title, date, location, content, type }, index) => {
                     const color = type ? colors[type] : primaryColor;
                     return (
-                      <Subsection key={index}>
-                        <Accordion allowToggle>
+                      <Box key={index}>
+                        {index > 0 && (
+                          <Divider
+                            borderColor={useColorModeValue('gray.600', 'gray.100')}
+                            opacity={0.25}
+                            my={2}
+                          />
+                        )}
+                        <Subsection>
+                          <Accordion allowToggle>
                           <AccordionItem border="none">
 
                             <AccordionButton
@@ -745,13 +814,16 @@ export default function HomePage() {
                                 md: 'start'
                               }}
                             >
-                              <HStack spacing={4} textAlign="start">
+                              <Stack
+                                direction={{ base: 'column', lg: 'row' }}
+                                spacing={4}
+                                textAlign="start"
+                                alignItems="start"
+                              >
                                 <SubsubsectionTitle color={color}>
                                   {title}
                                 </SubsubsectionTitle>
-                                <SubsectionTitleDate
-                                  display={{ base: 'none', lg: 'initial' }}
-                                >
+                                <SubsectionTitleDate>
                                   { euDate(date) }
                                   { date.getHours() !== 0
                                     ? ` (${euTime(date)})`
@@ -759,13 +831,11 @@ export default function HomePage() {
                                   }
                                 </SubsectionTitleDate>
                                 {location && (
-                                  <SubsectionLocation
-                                    display={{ base: 'none', lg: 'initial' }}
-                                  >
+                                  <SubsectionLocation>
                                     {location}
                                   </SubsectionLocation>
                                 )}
-                              </HStack>
+                              </Stack>
                               <AccordionIcon />
                             </AccordionButton>
 
@@ -778,11 +848,12 @@ export default function HomePage() {
                             </AccordionPanel>
 
                           </AccordionItem>
-                        </Accordion>
-                      </Subsection>
+                          </Accordion>
+                        </Subsection>
+                      </Box>
                     );
                   }
-                )}
+                ) : <SubectionText>No lectures this week.</SubectionText>}
               </Stack>
             </Stack>
           );
